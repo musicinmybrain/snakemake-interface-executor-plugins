@@ -125,7 +125,7 @@ class RemoteExecutor(RealExecutor, ABC):
             sys.executable
             if SharedFSUsage.SOFTWARE_DEPLOYMENT
             in self.workflow.storage_settings.shared_fs_usage
-            else "python"
+            else "python3"
         )
 
     def get_job_args(self, job: JobExecutorInterface):
